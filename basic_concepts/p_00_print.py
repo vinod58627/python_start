@@ -21,3 +21,18 @@ print(f)
 # 20-30
 # 40-50
 # 150
+
+ #using input() to take user input
+num1 = input('Enter a number: ') #20
+num2 = input('Enter a number: ') #30
+
+print('You Entered:', num1 , num2) #20 ,30
+
+print('Sum is:', num1 + num2) #2030
+ #using input() With data type
+num1 = int(input('Enter a number: ')) #20
+num2 = int(input('Enter a number: ')) #30
+
+print('You Entered:', num1 , num2) #20, 30
+
+print('Sum is:', num1 + num2) #50
