@@ -158,6 +158,6 @@ print(e) # [10, 10, 20, 25, 30, 44, 50, 66, 70]
 # 9. Clear: 
 #==============================================
 f = [10, 20, 30, 44, 50, 66, 70, 25, 10]
-# f.clear()
-# print(f) #[] clear the values  not the list still its a empty list
-# print(type(f)) # <class 'list'>
+f.clear()
+print(f) #[] clear the values  not the list still its a empty list
+print(type(f)) # <class 'list'>
