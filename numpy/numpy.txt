@@ -1,0 +1,78 @@
+What is NumPy?
+NumPy is a Python library used for working with arrays.
+
+It also has functions for working in domain of linear algebra, fourier transform, and matrices.
+NumPy stands for Numerical Python.
+
+Why Use NumPy?
+In Python we have lists that serve the purpose of arrays, but they are slow to process.
+
+NumPy aims to provide an array object that is up to 50x faster than traditional Python lists.
+
+The array object in NumPy is called ndarray, it provides a lot of supporting functions that make working with ndarray very easy.
+
+Arrays are very frequently used in data science, where speed and resources are very important.
+
+Why is NumPy Faster Than Lists?
+
+NumPy arrays are stored at one continuous place in memory unlike lists, 
+ so processes can access and manipulate them very efficiently.
+This behavior is called locality of reference in computer science.
+This is the main reason why NumPy is faster than lists. Also it is optimized to work with latest CPU architectures.
+
+
+
+How to install: 
+
+python -m pip install numpy --to install the numpy library
+
+python -m pip show numpy -- to check numpy installed or not
+
+#Creating Arry with lsi and tuple
+import numpy as np
+
+lsarray = np.array([1,2,3,4,5,6,7,8,9,0])
+tparray = np.array((1,2,3,4,5,6,7,8,9,0))
+print(lsarray)
+print(type(lsarray))
+print(tparray)
+print(type(tparray))
+
+#0- dimentionsla Array
+
+zerodarr = np.array(10)
+print(zerodarr)#10
+print(type(zerodarr)) #<class 'numpy.ndarray'>
+
+#1- dimentionsla Array
+# ========================
+oneDArrayList = np.array([1,2,3,4,5,6,7,8,9])
+print(oneDArrayList) #[1 2 3 4 5 6 7 8 9]
+print(type(oneDArrayList)) #<class 'numpy.ndarray'>
+
+oneDArrayTuple = np.array((1,2,3,4,5,6,7,8,9))
+print(oneDArrayTuple) #[1 2 3 4 5 6 7 8 9]
+print(type(oneDArrayTuple)) #<class 'numpy.ndarray'>
+
+# Slicing
+
+print("5th index",oneDArrayTuple[5])#5th index 6
+print("From 5th index to next all", oneDArrayTuple[5:])#5th index 6
+print("upto 4th index 5th index exclude", oneDArrayTuple[:5])#upto 4th index 5th index exclude [1 2 3 4 5]
+print("from 0 to 6th index",oneDArrayTuple[0:6] )#from 0 to 6th index [1 2 3 4 5 6]
+print("from 0 to 6th index with step 2",oneDArrayTuple[0:6:2] ) #from 0 to 6th index with step 2 [1 3 5]
+
+print("Print reverse", oneDArrayTuple[::-1])
+#Print reverse [9 8 7 6 5 4 3 2 1]
+
+
+#2- Dimentional Array:
+# ======================================
+
+
+twoDarray = np.array([[1,2,3], [4,5,6], [7,8,9]])
+print(twoDarray)
+print(type(twoDarray))
+
+
+
